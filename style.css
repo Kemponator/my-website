@@ -80,6 +80,7 @@ li {
 .aboutMe {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   margin: 2rem 0;
   text-align: center;
@@ -133,6 +134,11 @@ li {
   max-height: 100px;
   filter: invert(100%);
   margin: 0 2rem;
+  transition: 0.3s ease-out;
+}
+
+.editIcon:hover {
+  scale: 90%;
 }
 
 .codeIcon {
@@ -140,6 +146,11 @@ li {
   max-height: 100px;
   filter: invert(100%);
   margin: 0 2rem;
+  transition: 0.3s ease-out;
+}
+
+.codeIcon:hover {
+  scale: 90%;
 }
 
 /* Testimonials */
@@ -162,6 +173,7 @@ li {
 .test1 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -197,6 +209,7 @@ li {
 .test2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -237,7 +250,7 @@ li {
   background-image: url("/images/Website Banner.png");
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  margin: 4rem 0 0 0;
 }
 
 .workParts {
@@ -261,21 +274,29 @@ li {
 
 .button1 {
   max-width: fit-content;
+  height: 30px;
   background-color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: black;
   margin-bottom: 3rem;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.button1:hover {
+  opacity: 1;
+  scale: 110%;
 }
 
 /* Footer */
 
 footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 2rem;
-  color: white;
+  color: black;
 }
